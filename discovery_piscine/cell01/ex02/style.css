@@ -1,0 +1,21 @@
+h1
+{
+	text-align: center;
+}
+
+.chamois
+{
+	width: 200px;
+	display:inline-block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.mountain
+{
+	width: 200px;
+	display:inline-block;
+  margin-left: 30%;
+  margin-right: auto;
+}
