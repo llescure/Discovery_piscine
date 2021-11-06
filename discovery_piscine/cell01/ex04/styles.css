@@ -1,0 +1,43 @@
+body
+{
+	background-color: fuchsia;
+}
+
+h1
+{
+	text-align: center;
+	color: white;
+}
+
+.copyright
+{
+	text-align: right;
+	font-family: Courier New;
+	font-style: italic;
+}
+
+.images
+{
+	display: inline-block;
+}
+
+.align
+{
+	text-align: center;
+}
+
+.img_in_website
+{
+	width: 200px;
+	height: 200px;
+}
+
+.line
+{
+	border: 1px dashed #000;
+	width: 100%;
+}
+p
+{
+	text-align: center;
+}

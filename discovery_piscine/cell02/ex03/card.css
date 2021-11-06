@@ -1,0 +1,42 @@
+h1, body
+{
+	text-align: center;
+}
+table
+{
+	border-collapse: collapse;
+	border: 1px #B8B4B4 solid;
+	box-shadow: 3px 3px 3px #B8B4B4;
+	margin-left: auto;
+	margin-right: auto;
+}
+.picture
+{
+	width: 300px;
+}
+.first_text
+{
+	height: 5px;
+}
+h2
+{
+	color: #29E5D7;
+	height: 5px;
+}
+h3
+{
+	color: #DFEAE9;
+	height: 5px;
+}
+.contact
+{
+	background-color: black;
+	color: white;
+	font-size: 30px;
+	text-decoration: none;
+	width: 100%;
+}
+.social_media
+{
+	width: 100px;
+}

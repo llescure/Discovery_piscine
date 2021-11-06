@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Explode this balloon</title>
+		<link rel="stylesheet" href="balloon.css"/>
+		<script>
+			function make_grow()
+{
+	let balloon = document.getElementById("balloon");
+	let background = window.getComputedStyle(balloon).backgroundColor;
+	let height = balloon.offsetHeight;
+	let width = balloon.offsetWidth;
+
+	// Set color
+	if (background == "rgb(200, 0, 0)")
+		balloon.style.backgroundColor = "rgb(0, 200, 0)";
+	else if (background == "rgb(0, 200, 0)")
+		balloon.style.backgroundColor = "rgb(0, 0, 200)";
+	else if (background == "rgb(0, 0, 200)")
+		balloon.style.backgroundColor = "rgb(200, 0, 0)";
+	// Set size
+	if (height < '420' && width < '420')
+	{
+		balloon.style.height = height + 10 + "px";
+		balloon.style.width = width + 10 + "px";
+		return;
+	}
+	else
+	{
+		balloon.style.height = "200" + "px";
+		balloon.style.width = "200" + "px";
+		return;
+	}
+}
+function make_shrink()
+{
+	let balloon = document.getElementById("balloon");
+	let background = window.getComputedStyle(balloon).backgroundColor;
+	let height = balloon.offsetHeight;
+	let width = balloon.offsetWidth;
+
+	// Set color
+	if (background == "rgb(200, 0, 0)")
+		balloon.style.backgroundColor = "rgb(0, 0, 200)";
+	else if (background == "rgb(0, 200, 0)")
+		balloon.style.backgroundColor = "rgb(200, 0, 0)";
+	else if (background == "rgb(0, 0, 200)")
+		balloon.style.backgroundColor = "rgb(0, 200, 0)";
+	// Set size
+	if (height > '200' && width > '200')
+	{
+		balloon.style.height = height - 5 + "px";
+		balloon.style.width = width - 5 + "px";
+		return;
+	}
+}
+		</script>
+		<body>
+			<div id="balloon" onclick="make_grow();" onmouseout="make_shrink();">
+			</div>
+		</body>
+	</head>
+</html>

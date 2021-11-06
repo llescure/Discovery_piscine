@@ -1,0 +1,7 @@
+#balloon
+{
+	background-color: rgb(200, 0, 0);
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+}

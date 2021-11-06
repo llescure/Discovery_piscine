@@ -1,0 +1,39 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- backgroound.html                                   :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: llescure <marvin@42.fr>                    +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2021/11/05 14:02:44 by llescure          #+#    #+#            -->
+<!-- Updated: 2021/11/05 17:45:29 by llescure         ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="backgroound.css"/>
+		<title>Change background</title>
+		<script>
+	function random_color()
+{
+		var color = "#";
+		var Hexa_number = "123456789ABCDEF";
+		for(var i = 0; i < 6; i++)
+		{
+			color+= Hexa_number[Math.floor(Math.random() * 16)];
+		}
+	return color;
+}
+
+			function change_background()
+	{
+				document.body.style.background = random_color();
+	}
+		</script>
+		<body>
+				<button type="button" onclick="change_background();">Click me!</button>
+		</body>
+	</head>
+</html>

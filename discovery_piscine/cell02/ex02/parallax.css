@@ -1,0 +1,49 @@
+body, html
+{
+	margin: 0;
+	height: 100%;
+	color: yellow;
+}
+.group_first_img
+{
+	background-image: url("images/Neos1.jpg");
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.black_background
+{
+	background-color: black;
+	height: 1000px;
+}
+.group_second_img
+{
+	background-image: url("images/Neos2.jpg");
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.text_first
+{
+	position: absolute;
+	font-size: 10px;
+	top: 50%;
+	left: 50%;
+}
+.text_second
+{
+	position: absolute;
+	left: 50%;
+	top: 170%;
+}
+.text_final
+{
+	position: absolute;
+	font-size: 10px;
+	left: 50%;
+	top: 215%;
+}
