@@ -1,0 +1,62 @@
+.allign
+{
+	display: flex;
+	flex-direction: row;
+	height: 40vh;
+}
+#first_number
+{
+	font-size: 30px;
+	border: 3px #EEF3F7 solid;
+	width: 30%;
+	text-align: center;
+	height: 10vh;
+}
+.select_operation
+{
+	position: relative;
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 10vh;
+}
+
+.select_button
+{
+	font-size: 30px;
+	background-color: #EEF3F7;
+	height: 100%;
+	cursor: pointer;
+	border: none;
+}
+
+.select_operation:hover .element
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.element
+{
+	display: none;
+	text-decoration: none;
+	border: 3px #EEF3F7 solid;
+}
+
+#second_number
+{
+	font-size: 30px;
+	border: 3px #EEF3F7 solid;
+	width: 30%;
+	text-align: center;
+	height: 10vh;
+}
+
+#calculation
+{
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 30px;
+	border: none;
+	width: 100%;
+}

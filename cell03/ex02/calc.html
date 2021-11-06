@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>It's over 9000</title>
 		<link rel="stylesheet" href="calc.css"/>
+		<title>It's over 9000</title>
 	</head>
 	<body>
-	<script>
-		function make_calculation()
-{
-	 
-}
-	</script>
-	<div id="right_text_input">
-	</div>
-	<div id="select_field">
-	</div>
-	<div id="left_text_input">
-	</div>
-	<button id="try_me" onclick="make_calculation"</button>
+		<div class="allign">
+			<div id="first_number">
+				<p>Choose a first number</p>
+			</div>
+			<div class="select_operation">
+				<button class="select_button"> Select an operation </button>
+				<div class="element">
+					<p>+</p>
+					<p>-</p>
+					<p>*</p>
+					<p>/</p>
+					<p>%</p>
+				</div>
+			</div>
+			<div id="second_number">
+				<p>Choose a second number</p>
+			</div>
+		</div>
+		<button id="calculation">Try me</button>
 	</body>
 </html>
