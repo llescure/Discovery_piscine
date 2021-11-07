@@ -4,25 +4,83 @@
 		<link rel="stylesheet" href="calc.css"/>
 		<title>It's over 9000</title>
 	</head>
+	<script>
+		function make_calculation()
+{
+	let first_number = Number(document.getElementById("first_number").value);
+	let second_number = Number(document.getElementById("second_number").value);
+	let operation = document.getElementById("operation").value;
+
+	setInterval(function() {
+    alert("Please, use me...");
+	}, 30000);
+
+	//Let's check the error case
+	if (first_number == 0 || second_number == 0 && (operation == "div" || operation == "modulo"))
+	{
+		alert("It's over 9000!");
+		console.log("It's over 9000!");
+		return;
+	}
+	if (first_number < 0 || second_number < 0 || first_number == NaN || second_number == NaN)
+	{
+		alert("Error :(");
+		return;
+	}
+	if (operation == "plus")
+	{
+		alert(first_number + second_number);
+		console.log(first_number + second_number);
+		return;
+	}
+	if (operation == "minus")
+	{
+		alert(first_number - second_number);
+		console.log(first_number - second_number);
+		return;
+	}
+	if (operation == "times")
+	{
+		alert(first_number * second_number);
+		console.log(first_number * second_number);
+		return;
+	}
+	if (operation == "div")
+	{
+		alert(first_number / second_number);
+		console.log(first_number / second_number);
+		return;
+	}
+	if (operation == "modulo")
+	{
+		alert(first_number % second_number);
+		console.log(first_number % second_number);
+		return;
+	}
+}
+	</script>
 	<body>
 		<div class="allign">
-			<div id="first_number">
-				<p>Choose a first number</p>
+			<div id="first_number_layout">
+				<label for="first_num"> Choose a first number</label>
+				<input type="text" name="first_num" id="first_number">
 			</div>
 			<div class="select_operation">
-				<button class="select_button"> Select an operation </button>
-				<div class="element">
-					<p>+</p>
-					<p>-</p>
-					<p>*</p>
-					<p>/</p>
-					<p>%</p>
-				</div>
+				<label for="select_button"> Select an operation: </label>
+				<select name="operation" id="operation">
+					<option value="">--Please choose an operation--</option>
+					<option value="plus">+</option>
+					<option value="minus">-</option>
+					<option value="times">*</option>
+					<option value="div">/</option>
+					<option value="modulo">%</option>
+				</select>
 			</div>
-			<div id="second_number">
-				<p>Choose a second number</p>
+			<div id="second_number_layout">
+				<label for="second_num"> Choose a second number</label>
+				<input type="text" name="second_num" id="second_number">
 			</div>
 		</div>
-		<button id="calculation">Try me</button>
+		<button id="calculation" onclick="make_calculation();">Try me</button>
 	</body>
 </html>
